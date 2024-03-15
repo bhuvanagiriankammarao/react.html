@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>hello world</div>
+    <script>
+      let head1 = document.createElement("h1");
+      head1.innerHTML="this is heading 1";
+    document.body.prepend(head1);
+    let div1 = document.createElement("div");
+      div1.innerHTML="this is div1 tag ";
+    document.body.append(div1);
+    head1.remove();
+    </script>
+</body>
+</html>

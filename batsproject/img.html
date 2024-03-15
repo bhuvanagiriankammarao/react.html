@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="Dimage"></div>
+<button onclick="myfunction()" >submit</button>
+    <script>
+        
+      function myfunction(){
+
+    
+        
+        let products =  [
+        { id: 1, name: "Tomato", image:"tamota.png",cid:0 },
+        { id: 1, name: "Cabbage",image:"cabbage.png", cid:0 },
+        { id: 1, name: "Apple",image:"apple.png" , cid:0},
+        { id: 1, name: "Orange",image:"orange.png",cid:0 },
+      ]; 
+      let index = Math.round(Math.random()*10);
+    let str=`<img src='${
+        products[index].image }'>`;
+        Dimage.innerHTML = str;
+    }
+    </script>
+</body>
+</html>
